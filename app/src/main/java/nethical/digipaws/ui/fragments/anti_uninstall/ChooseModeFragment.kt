@@ -48,6 +48,9 @@ class ChooseModeFragment : Fragment() {
                         .addToBackStack(null)
                         .commit()
                 }
+                else -> {
+                    // Do nothing
+                }
             }
         }
     }

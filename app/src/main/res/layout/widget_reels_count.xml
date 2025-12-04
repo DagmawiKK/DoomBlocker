@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/reels_bg"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -34,7 +35,7 @@
                 android:layout_height="25dp"
                 android:contentDescription="Refresh stats"
                 android:src="@drawable/baseline_refresh_24"
-                android:tint="?android:attr/colorAccent" />
+                app:tint="?android:attr/colorAccent" />
         </LinearLayout>
 
         <TextView

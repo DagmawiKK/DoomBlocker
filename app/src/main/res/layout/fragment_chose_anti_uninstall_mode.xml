@@ -5,7 +5,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?attr/colorSurface"
-    android:padding="16dp"
     tools:context=".ui.fragments.anti_uninstall.ChooseModeFragment">
 
     <RadioGroup
@@ -22,9 +21,8 @@
             android:id="@+id/timed_mode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="?attr/colorOnSurface"
-            android:text="@string/timed_mode" />
-
+            android:text="@string/timed_mode"
+            android:textColor="?attr/colorOnSurface" />
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -36,11 +34,10 @@
             android:id="@+id/pass_mode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="?attr/colorOnSurface"
-            android:text="@string/password_mode" />
+            android:text="@string/password_mode"
+            android:textColor="?attr/colorOnSurface" />
 
         <TextView
-            android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="?attr/colorOnSurfaceVariant"
@@ -54,7 +51,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="@string/next"
+        android:textColor="?attr/colorOnSurface"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name" translatable="false">DigiPaws</string>
     <string name="launcher_options">Launcher Options</string>
-    <string name="focus_mode">Focus Mode</string>
+    <string name="focus_mode" translatable="false">Focus Mode</string>
     <string name="app_blocker">App Blocker</string>
     <string name="view_reel_blocker">View/Reel Blocker</string>
     <string name="keyword_blocker">Keyword Blocker (BETA)</string>
@@ -21,7 +21,7 @@
     <string name="manage_keyword_packs">Manage Keyword Packs</string>
     <string name="warning_keywords_settings">Enable Keyword Blocker Accessibility Service to manage blocked keywords</string>
     <string name="grayscale_filter">Grayscale Filter</string>
-    <string name="setup_filter">Setup Filter</string>">
+    <string name="setup_filter">Setup Filter</string>
     <string name="usage_stats">Usage Stats</string>
     <string name="manage_overlay_trackers">Manage Real Time Overlay</string>
     <string name="warning_usage_tracker_settings">Enable Usage Tracker Accessibility Service to manage trackers</string>

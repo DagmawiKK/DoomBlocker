@@ -117,7 +117,7 @@ class ScreentimeWidgetProvider : AppWidgetProvider() {
                         intent,
                         PendingIntent.FLAG_UPDATE_CURRENT or PendingIntent.FLAG_IMMUTABLE
                     )
-                    setOnClickPendingIntent(R.id.widget_bg_app_stats, openIntent)
+                    setOnClickPendingIntent(android.R.id.background, openIntent)
                 }
             }
 
