@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/widget_bg_app_stats"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:theme="@style/Theme.Material3.DynamicColors.DayNight">
+    android:layout_height="match_parent">
 
     <LinearLayout
         android:id="@android:id/background"
@@ -27,7 +27,7 @@
                 android:layout_weight="1"
                 android:text="Screen time"
                 style="@style/TextAppearance.Material3.BodyMedium"
-                android:textColor="?android:attr/textColorPrimary" />
+                android:textColor="?attr/colorOnSurface" />
 
             <ImageView
                 android:id="@+id/refresh_stats_screentime"
@@ -35,7 +35,7 @@
                 android:layout_height="25dp"
                 android:contentDescription="Refresh stats"
                 android:src="@drawable/baseline_refresh_24"
-                android:tint="?android:attr/colorAccent" />
+                app:tint="?attr/colorPrimary" />
         </LinearLayout>
 
         <TextView
@@ -49,7 +49,7 @@
             android:gravity="center_vertical"
             android:singleLine="true"
             android:text="0h 0m"
-            android:textColor="?android:attr/textColorPrimary"
+            android:textColor="?attr/colorOnSurface"
             android:textStyle="bold" />
 
         <TextView
@@ -62,7 +62,7 @@
             android:gravity="center_vertical"
             android:singleLine="true"
             android:text="1h App"
-            android:textColor="?android:attr/textColorPrimary" />
+            android:textColor="?attr/colorOnSurface" />
 
 
         <TextView
@@ -75,7 +75,7 @@
             android:gravity="center_vertical"
             android:singleLine="true"
             android:text="1h App"
-            android:textColor="?android:attr/textColorPrimary" />
+            android:textColor="?attr/colorOnSurface" />
 
 
         <TextView
@@ -88,7 +88,7 @@
             android:gravity="center_vertical"
             android:singleLine="true"
             android:text="1h App"
-            android:textColor="?android:attr/textColorPrimary" />
+            android:textColor="?attr/colorOnSurface" />
 
     </LinearLayout>
 </FrameLayout>

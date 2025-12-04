@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="?attr/colorSurface"
     android:padding="16dp"
     tools:context=".ui.fragments.anti_uninstall.ChooseModeFragment">
 
@@ -21,29 +22,34 @@
             android:id="@+id/timed_mode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="?attr/colorOnSurface"
             android:text="@string/timed_mode" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
+            android:textColor="?attr/colorOnSurfaceVariant"
             android:text="@string/block_all_uninstall_attempts_for_a_set_amount_of_days" />
 
         <RadioButton
             android:id="@+id/pass_mode"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="?attr/colorOnSurface"
             android:text="@string/password_mode" />
 
         <TextView
             android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:textColor="?attr/colorOnSurfaceVariant"
             android:text="@string/block_all_uninstall_attempts_until_you_remove_anti_uninstall_with_a_password" />
     </RadioGroup>
 
     <Button
         android:id="@+id/btn_next"
+        style="@style/Widget.Material3.Button.TonalButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"

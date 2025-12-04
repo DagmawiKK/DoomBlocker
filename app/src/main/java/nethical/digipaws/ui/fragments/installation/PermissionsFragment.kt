@@ -118,16 +118,19 @@ class PermissionsFragment : Fragment() {
 
 
     private fun setPermissionIcon(isEnabled: Boolean, icon: ImageView) {
+        val typedValue = android.util.TypedValue()
         if (isEnabled) {
             icon.setImageResource(R.drawable.baseline_done_24)
-            icon.setColorFilter(R.color.md_theme_onSurface)
+            requireContext().theme.resolveAttribute(com.google.android.material.R.attr.colorOnSurface, typedValue, true)
+            icon.setColorFilter(typedValue.data, android.graphics.PorterDuff.Mode.SRC_IN)
             nGivenPermissions++
             if (nGivenPermissions > 1) {
                 binding.btnNext.isEnabled = true
             }
         } else {
             icon.setImageResource(R.drawable.baseline_close_24)
-            icon.setColorFilter(R.color.error_color)
+            requireContext().theme.resolveAttribute(com.google.android.material.R.attr.colorError, typedValue, true)
+            icon.setColorFilter(typedValue.data, android.graphics.PorterDuff.Mode.SRC_IN)
         }
     }
 
